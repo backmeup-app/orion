@@ -50,9 +50,11 @@ export const components: { [key: string]: ComponentStyleConfig } = {
         },
       },
       secondary: {
-        background: "navajoWhite",
-        color: "charlestonGreen",
-        boxShadow: " 0px 9px 0px -5px rgba(0,0,0,0.75)",
+        background: "transparent",
+        border: "1px solid #1E2D2F",
+        color: "#1E2D2F",
+        // boxShadow: " 0px 9px 0px -5px #1E2D2F",
+        fontWeight: "bold",
 
         _hover: {
           background: "yellow.500",
