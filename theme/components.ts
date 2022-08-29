@@ -53,7 +53,7 @@ export const components: { [key: string]: ComponentStyleConfig } = {
         background: "ivory",
         border: "1px solid #1E2D2F",
         color: "#1E2D2F",
-        // boxShadow: " 0px 9px 0px -5px #1E2D2F",
+        textShadow: "0.5px 0.5px navajoWhite",
         fontWeight: "bold",
 
         _hover: {
