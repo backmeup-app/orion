@@ -1,11 +1,13 @@
 import { NextPage } from "next";
-import { Hero } from "../components";
+import { Box } from "@chakra-ui/react";
+import { Hero, About } from "../components";
 
 const Index: NextPage = () => {
   return (
-    <>
+    <Box overflowX="hidden">
       <Hero />
-    </>
+      <About />
+    </Box>
   );
 };
 

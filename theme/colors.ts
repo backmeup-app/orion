@@ -23,6 +23,6 @@ export const colors = {
     "800": "#665500",
     "900": "#FFD60A",
   },
-  navajoWhite: "#F7DBA7",
+  ivory: "#FFFAFA",
   charlestonGreen: "#1E2D2F",
 };

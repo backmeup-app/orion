@@ -17,7 +17,7 @@ export const Hero = () => {
       justify="center"
       align="center"
       pos="relative"
-      bg="#FFFAFA"
+      bg="ivory"
     >
       <Flex pos="absolute" top="5%" left={0} px={12} w="100%" fontSize="md">
         <Text>Dome</Text>
