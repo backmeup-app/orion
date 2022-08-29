@@ -9,7 +9,7 @@ export const components: { [key: string]: ComponentStyleConfig } = {
   },
   Heading: {
     baseStyle: {
-      fontFamily: "oswald",
+      fontFamily: "openSans",
     },
   },
   Button: {
@@ -50,7 +50,7 @@ export const components: { [key: string]: ComponentStyleConfig } = {
         },
       },
       secondary: {
-        background: "transparent",
+        background: "ivory",
         border: "1px solid #1E2D2F",
         color: "#1E2D2F",
         // boxShadow: " 0px 9px 0px -5px #1E2D2F",
