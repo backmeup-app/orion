@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Box, Heading, SimpleGrid, GridItem, VStack } from "@chakra-ui/react";
-import { Features } from "..";
+import { Features, Slides } from "..";
 
 export const About = () => {
   const [selectedFeature, setSelectedFeature] = useState(0);
@@ -23,6 +23,10 @@ export const About = () => {
               handleFeatureClick={setSelectedFeature}
             />
           </VStack>
+        </GridItem>
+        <GridItem colSpan={1}></GridItem>
+        <GridItem colSpan={6} d="flex" justifyContent="center">
+          <Slides selectedFeatureIndex={selectedFeature} />
         </GridItem>
       </SimpleGrid>
     </Box>
