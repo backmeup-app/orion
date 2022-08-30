@@ -41,6 +41,7 @@ export const Slides: FC<TSlides> = ({ selectedFeatureIndex }) => {
           <Image
             src="https://res.cloudinary.com/olamileke/image/upload/v1661896832/backmeup/assets/hero/Screenshot_37_lly7ki.png"
             objectFit="contain"
+            alt=""
           />
         </Box>
       ))}

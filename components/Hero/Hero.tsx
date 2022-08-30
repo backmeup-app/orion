@@ -36,7 +36,7 @@ export const Hero = () => {
         <Text textAlign="center" fontSize="lg" w="80%" lineHeight="tall">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus
           vehicula metus eu pharetra. Vestibulum molestie neque dolor. Sed eu
-          neque facilisis lectus placerat rutrut
+          neque facilisis lectus placerat rutrum
         </Text>
         <Button size="lg" fontSize="17px">
           Get Started
