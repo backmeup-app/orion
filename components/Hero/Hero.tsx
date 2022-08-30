@@ -47,6 +47,7 @@ export const Hero = () => {
         top="16vh"
         left="8vw"
         boxSize="24"
+        alt=""
         src="https://res.cloudinary.com/olamileke/image/upload/v1661728612/backmeup/assets/hero/jelly-two-red-lines-1_d6didl.png"
       />
       <Image
@@ -54,6 +55,7 @@ export const Hero = () => {
         bottom="10vh"
         left="6vw"
         boxSize="28"
+        alt=""
         src=" https://res.cloudinary.com/olamileke/image/upload/v1661729382/backmeup/assets/hero/purr-portal_gh4lny.png"
       />
       <Image
@@ -61,6 +63,7 @@ export const Hero = () => {
         bottom="10vh"
         right="6vw"
         boxSize="28"
+        alt=""
         src="https://res.cloudinary.com/olamileke/image/upload/v1661729013/backmeup/assets/hero/rubber-lines-25_wicoef.png"
       />
     </Flex>

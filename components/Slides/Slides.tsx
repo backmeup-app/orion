@@ -28,6 +28,7 @@ export const Slides: FC<TSlides> = ({ selectedFeatureIndex }) => {
     >
       {new Array(3).fill("").map((_, index) => (
         <Box
+          key={index}
           p={8}
           bg={
             selectedFeatureIndex === index
