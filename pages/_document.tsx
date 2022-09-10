@@ -1,5 +1,7 @@
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import { chakra } from "@chakra-ui/react";
 
+const Body = chakra("body");
 export default class Document extends NextDocument {
   render() {
     return (
@@ -15,10 +17,20 @@ export default class Document extends NextDocument {
           />
           <title>Dome</title>
         </Head>
-        <body>
+        <Body
+          css={{
+            "&::-webkit-scrollbar": {
+              width: "8px",
+              height: "0",
+            },
+            "&::-webkit-scrollbar-thumb": {
+              background: "rgba(0, 0, 0, 0.3)",
+            },
+          }}
+        >
           <Main />
           <NextScript />
-        </body>
+        </Body>
       </Html>
     );
   }
