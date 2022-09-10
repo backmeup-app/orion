@@ -79,4 +79,29 @@ export const components: { [key: string]: ComponentStyleConfig } = {
       variant: "primary",
     },
   },
+  Accordion: {
+    baseStyle: {
+      container: {
+        border: "none",
+        mb: 1,
+        borderWidth: "1px",
+        borderStyle: "ridge",
+        borderColor: "navajoWhite",
+      },
+      item: {
+        bg: "yellow",
+        _focus: {
+          bg: "none",
+        },
+      },
+      button: {
+        _focus: {
+          boxShadow: "none",
+        },
+      },
+      panel: {
+        py: 5,
+      },
+    },
+  },
 };

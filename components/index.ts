@@ -5,3 +5,4 @@ export * from "./Features";
 export * from "./Hero";
 export * from "./Info";
 export * from "./Slides";
+export * from "./Wrappers";

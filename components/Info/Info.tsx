@@ -14,7 +14,13 @@ export const Info = () => {
   return (
     <SimpleGrid bg="ivory" py={20} px={28} columns={12} pos="relative">
       <GridItem colSpan={5}>
-        <Flex bg="charlestonGreen" alignItems="center" justify="center" py={28}>
+        <Flex
+          bg="charlestonGreen"
+          boxShadow="0px 11px 0px -5px navajoWhite"
+          alignItems="center"
+          justify="center"
+          py={28}
+        >
           <Image
             src="https://res.cloudinary.com/olamileke/image/upload/v1662825945/backmeup/assets/hero/juicy-girl-is-working-on-laptop-at-a-remote-job_gqkkz8.gif"
             objectFit="contain"
