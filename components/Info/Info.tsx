@@ -12,7 +12,7 @@ import {
 
 export const Info = () => {
   return (
-    <SimpleGrid bg="ivory" py={20} px={28} columns={12}>
+    <SimpleGrid bg="ivory" py={20} px={28} columns={12} pos="relative">
       <GridItem colSpan={5}>
         <Flex bg="charlestonGreen" alignItems="center" justify="center" py={28}>
           <Image
@@ -23,9 +23,14 @@ export const Info = () => {
         </Flex>
       </GridItem>
       <GridItem colSpan={1}></GridItem>
-      <GridItem colSpan={6} d="flex" alignItems="center">
-        <VStack alignItems="flex-start" spacing={4} pos="relative" top="-5%">
-          <Heading fontSize="2xl" fontFamily="openSans" color="charlestonGreen">
+      <GridItem colSpan={6} d="flex" alignItems="center" pos="relative">
+        <VStack alignItems="flex-start" spacing={4} pos="relative" top="5%">
+          <Heading
+            fontSize="2xl"
+            fontFamily="openSans"
+            color="charlestonGreen"
+            zIndex="modal"
+          >
             Go from zero to hero with your backups
           </Heading>
           <Text fontSize="md" lineHeight="tall" w="80%">
@@ -37,6 +42,24 @@ export const Info = () => {
             Get Started
           </Button>
         </VStack>
+        <Image
+          src="https://res.cloudinary.com/olamileke/image/upload/v1662835149/backmeup/assets/hero/bloom-dotted-motion-line_vrhrb1.png"
+          pos="absolute"
+          top="-5%"
+          left="0"
+          boxSize="52"
+          objectFit="contain"
+          zIndex="base"
+        />
+        <Image
+          src="https://res.cloudinary.com/olamileke/image/upload/v1662835277/backmeup/assets/hero/crayon-curly-line-23_pqhzg5.png"
+          pos="absolute"
+          bottom="-5%"
+          right="0%"
+          boxSize="32"
+          objectFit="contain"
+          zIndex="base"
+        />
       </GridItem>
     </SimpleGrid>
   );
