@@ -11,12 +11,11 @@ export const About = () => {
         <GridItem colSpan={5}>
           <VStack spacing={10} align="flex-start">
             <Heading
-              fontSize="1.61rem"
+              fontSize="2xl"
               lineHeight="1.575"
               textShadow="0.5px 0.5px navajoWhite"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              tempus vehicula.
+              Lorem ipsum dolor sit amet, consectetur.
             </Heading>
             <Features
               selectedFeatureIndex={selectedFeature}
