@@ -7,24 +7,42 @@ import {
   AccordionIcon,
   Flex,
   Text,
+  chakra,
 } from "@chakra-ui/react";
+import { BsPlusCircle } from "react-icons/bs";
+import { BiMinusCircle } from "react-icons/bi";
 import { TAccordion } from "./types";
 
 export const Accordion: FC<TAccordion> = ({ items }) => {
+  const PlusIcon = chakra(BsPlusCircle);
+  const MinusIcon = chakra(BiMinusCircle);
+
   const displayItems = () =>
     items.map(({ title, content }, index) => (
       <AccordionItem key={index}>
-        <AccordionButton>
-          <Flex justify="space-between" w="100%" py={4}>
-            <Text color="charlestonGreen" fontSize="1.075rem" fontWeight="bold">
-              {title}
-            </Text>
-            <AccordionIcon color="charlestonGreen" fontSize="xl" />
-          </Flex>
-        </AccordionButton>
-        <AccordionPanel>{content}</AccordionPanel>
+        {({ isExpanded }) => (
+          <>
+            <AccordionButton>
+              <Flex justify="space-between" w="100%" py={4}>
+                <Text
+                  color="charlestonGreen"
+                  // textShadow="0.5px 0.5px navajoWhite"
+                  fontSize="1.075rem"
+                >
+                  {title}
+                </Text>
+                {isExpanded ? (
+                  <MinusIcon fontSize="lg" color="charlestonGreen" />
+                ) : (
+                  <PlusIcon fontSize="lg" color="charlestonGreen" />
+                )}
+              </Flex>
+            </AccordionButton>
+            <AccordionPanel>{content}</AccordionPanel>
+          </>
+        )}
       </AccordionItem>
     ));
 
-  return <ChakraAccordion>{displayItems()}</ChakraAccordion>;
+  return <ChakraAccordion allowToggle>{displayItems()}</ChakraAccordion>;
 };

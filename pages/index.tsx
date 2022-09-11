@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { Box } from "@chakra-ui/react";
-import { Hero, About, Info, Faqs } from "../components";
+import { Hero, About, Info, Faqs, Footer } from "../components";
 
 const Index: NextPage = () => {
   return (
@@ -9,6 +9,7 @@ const Index: NextPage = () => {
       <About />
       <Info />
       <Faqs />
+      <Footer />
     </Box>
   );
 };

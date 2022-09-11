@@ -2,6 +2,7 @@ export * from "./About";
 export * from "./Faqs";
 export * from "./Feature";
 export * from "./Features";
+export * from "./Footer";
 export * from "./Hero";
 export * from "./Info";
 export * from "./Slides";

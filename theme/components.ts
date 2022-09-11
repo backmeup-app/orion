@@ -95,12 +95,19 @@ export const components: { [key: string]: ComponentStyleConfig } = {
         },
       },
       button: {
+        px: 6,
         _focus: {
           boxShadow: "none",
         },
+
+        _hover: {
+          bg: "none",
+        },
       },
       panel: {
-        py: 5,
+        px: 6,
+        pt: 1,
+        pb: 5,
       },
     },
   },

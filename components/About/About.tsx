@@ -15,8 +15,7 @@ export const About = () => {
               lineHeight="1.575"
               textShadow="0.5px 0.5px navajoWhite"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              tempus vehicula.
+              Lorem ipsum dolor sit amet, consectetur.
             </Heading>
             <Features
               selectedFeatureIndex={selectedFeature}
