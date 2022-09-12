@@ -1,16 +1,29 @@
+import { useEffect, useContext } from "react";
 import {
-  Flex,
   Text,
   Spacer,
   Button,
   HStack,
   Box,
   Container,
+  chakra,
 } from "@chakra-ui/react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AppContext, TAppContext } from "../../contexts";
 
 export const Nav = () => {
+  const { browserWidth } = useContext<TAppContext>(AppContext);
+  useEffect(() => {}, []);
+  const HamburgerIcon = chakra(GiHamburgerMenu);
+
   return (
-    <Box pos="absolute" top="38px" left={0} w="100%" fontSize="md">
+    <Box
+      pos="absolute"
+      top={{ base: "33px", sm: "38px" }}
+      left={0}
+      w="100%"
+      fontSize="md"
+    >
       <Container
         d="flex"
         w="90%"
@@ -21,12 +34,18 @@ export const Nav = () => {
       >
         <Text>Dome</Text>
         <Spacer />
-        <HStack spacing={8}>
-          <Button size="sm" variant="secondary">
-            Login
-          </Button>
-          <Button size="sm">Get Started</Button>
-        </HStack>
+        {browserWidth && browserWidth >= 769 ? (
+          <HStack spacing={8}>
+            <Button size="sm" variant="secondary">
+              Login
+            </Button>
+            <Button size="sm">Get Started</Button>
+          </HStack>
+        ) : (
+          <Box p="4" rounded="full" bg="navajowhite" cursor="pointer">
+            <HamburgerIcon color="charlestonGreen" fontSize="xl" />
+          </Box>
+        )}
       </Container>
     </Box>
   );
