@@ -79,6 +79,11 @@ export const components: { [key: string]: ComponentStyleConfig } = {
       variant: "primary",
     },
   },
+  Container: {
+    baseStyle: {
+      px: 0,
+    },
+  },
   Accordion: {
     baseStyle: {
       container: {
