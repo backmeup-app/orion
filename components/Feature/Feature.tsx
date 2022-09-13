@@ -28,7 +28,7 @@ export const Feature: FC<TFeature> = ({
       <Text
         mb={2}
         fontSize="16.5px"
-        color={{ base: "navajowhite", sm: isActive ? "navajowhite" : "white" }}
+        color={{ base: "white", sm: isActive ? "navajowhite" : "white" }}
       >
         {heading}
       </Text>
