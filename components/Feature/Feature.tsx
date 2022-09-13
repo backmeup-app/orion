@@ -21,6 +21,7 @@ export const Feature: FC<TFeature> = ({
       cursor="pointer"
       transition="all 0.5s ease-in"
       onClick={() => handleClick?.(index ?? 0)}
+      w={{ base: "100%", lg: "fit-content" }}
     >
       <Text mb={2} fontSize="16.5px" color={isActive ? "navajowhite" : "white"}>
         {heading}

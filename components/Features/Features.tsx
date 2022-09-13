@@ -9,7 +9,10 @@ export const Features: FC<TFeatures> = ({
   handleFeatureClick,
 }) => {
   return (
-    <VStack align="flex-start" w="80%">
+    <VStack
+      align={{ base: "center", lg: "flex-start" }}
+      w={{ base: "100%", xl: "80%" }}
+    >
       {features.map((feature, index) => (
         <Feature
           key={index}
