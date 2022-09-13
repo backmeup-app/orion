@@ -23,7 +23,7 @@ export const About = () => {
     >
       <Heading
         fontSize={{ base: "xl", md: "2xl" }}
-        lineHeight="1.575"
+        lineHeight="tall"
         textShadow="0.5px 0.5px navajoWhite"
         textAlign="center"
       >
