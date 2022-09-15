@@ -19,15 +19,23 @@ export const Accordion: FC<TAccordion> = ({ items }) => {
 
   const displayItems = () =>
     items.map(({ title, content }, index) => (
-      <AccordionItem key={index}>
+      <AccordionItem
+        key={index}
+        borderBottomWidth={{ base: "0px !important", sm: "1px !important" }}
+      >
         {({ isExpanded }) => (
           <>
-            <AccordionButton>
-              <Flex justify="space-between" w="100%" py={4}>
+            <AccordionButton px={{ base: 2, sm: 6 }}>
+              <Flex
+                justify="space-between"
+                align="center"
+                w="100%"
+                py={{ base: 3, sm: 4 }}
+              >
                 <Text
                   color="charlestonGreen"
-                  // textShadow="0.5px 0.5px navajoWhite"
-                  fontSize="1.075rem"
+                  fontSize="1.021rem"
+                  lineHeight="taller"
                 >
                   {title}
                 </Text>
@@ -38,7 +46,11 @@ export const Accordion: FC<TAccordion> = ({ items }) => {
                 )}
               </Flex>
             </AccordionButton>
-            <AccordionPanel>{content}</AccordionPanel>
+            <AccordionPanel pb={{ base: 0, sm: 5 }} px={{ base: 2, sm: 6 }}>
+              <Text fontSize="md" lineHeight="taller">
+                {content}
+              </Text>
+            </AccordionPanel>
           </>
         )}
       </AccordionItem>
