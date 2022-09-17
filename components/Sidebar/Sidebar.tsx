@@ -15,7 +15,7 @@ export const Sidebar: FC<TSidebar> = ({ isVisible }) => {
       justify="center"
       align="center"
       transition="all 0.3s ease-in"
-      zIndex="10"
+      zIndex={isVisible ? 10 : -9999}
     >
       <VStack spacing={7} pos="relative" top={{ base: 0, sm: "-3%" }}>
         <Button

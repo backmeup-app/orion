@@ -94,7 +94,7 @@ export const Nav = () => {
                 setIsSidebarVisible(false);
               }}
               transition="opacity 0.3s ease-in"
-              zIndex={5}
+              zIndex={isSidebarVisible ? 5 : -9999}
             />
           </>
         )}
