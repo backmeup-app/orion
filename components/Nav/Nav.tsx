@@ -54,7 +54,7 @@ export const Nav = () => {
                 navigate("/session/new");
               }}
             >
-              Login
+              Signin
             </Button>
             <Button
               size="sm"
@@ -62,7 +62,7 @@ export const Nav = () => {
                 navigate("/accounts/new");
               }}
             >
-              Get Started
+              Signup
             </Button>
           </HStack>
         ) : (
