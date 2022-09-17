@@ -11,7 +11,7 @@ export const Faqs = () => {
             color="charlestonGreen"
             fontSize={{ base: "xl", sm: "1.27rem", md: "1.45rem" }}
             textAlign="center"
-            mb={{ base: 7, lg: 9 }}
+            mb={{ base: 7, lg: 8 }}
             pos="relative"
           >
             Frequently Asked Questions
