@@ -10,6 +10,7 @@ import {
   Box,
   Container,
 } from "@chakra-ui/react";
+import { navigate } from "../../utilities";
 
 export const Info = () => {
   return (
@@ -66,7 +67,13 @@ export const Info = () => {
                 consectetur adipiscing elit. Nunc tempus vehicula metus eu
                 pharetra
               </Text>
-              <Button pos="relative" top={2}>
+              <Button
+                pos="relative"
+                top={2}
+                onClick={() => {
+                  navigate("/accounts/new");
+                }}
+              >
                 Get Started
               </Button>
             </VStack>
