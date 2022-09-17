@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Flex, VStack, Heading, Text, Image, Button } from "@chakra-ui/react";
 import { Nav } from "..";
 import { AppContext, TAppContext } from "../../contexts";
+import { navigate } from "../../utilities";
 
 export const Hero = () => {
   const { browserWidth } = useContext<TAppContext>(AppContext);
@@ -46,6 +47,9 @@ export const Hero = () => {
           fontSize="17px"
           position="relative"
           top={{ base: "4px", sm: "0" }}
+          onClick={() => {
+            navigate("/session/new");
+          }}
         >
           Get Started
         </Button>

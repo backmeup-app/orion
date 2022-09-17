@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AppContext, TAppContext } from "../../contexts";
+import { navigate } from "../../utilities";
 
 export const Nav = () => {
   const { browserWidth } = useContext<TAppContext>(AppContext);
@@ -45,10 +46,23 @@ export const Nav = () => {
         <Spacer />
         {browserWidth && browserWidth >= 769 ? (
           <HStack spacing={8}>
-            <Button size="sm" variant="secondary">
+            <Button
+              size="sm"
+              variant="secondary"
+              onClick={() => {
+                navigate("/session/new");
+              }}
+            >
               Login
             </Button>
-            <Button size="sm">Get Started</Button>
+            <Button
+              size="sm"
+              onClick={() => {
+                navigate("/accounts/new");
+              }}
+            >
+              Get Started
+            </Button>
           </HStack>
         ) : (
           <Box p="4" rounded="full" bg="navajowhite" cursor="pointer">
