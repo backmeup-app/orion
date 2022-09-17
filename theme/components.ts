@@ -57,7 +57,7 @@ export const components: { [key: string]: ComponentStyleConfig } = {
         fontWeight: "bold",
 
         _hover: {
-          background: "yellow.500",
+          background: "yellow.300",
         },
       },
       danger: {
@@ -89,7 +89,6 @@ export const components: { [key: string]: ComponentStyleConfig } = {
       container: {
         border: "none",
         mb: 1,
-        borderWidth: "1px",
         borderStyle: "ridge",
         borderColor: "navajoWhite",
       },
@@ -100,7 +99,6 @@ export const components: { [key: string]: ComponentStyleConfig } = {
         },
       },
       button: {
-        px: 6,
         _focus: {
           boxShadow: "none",
         },
@@ -110,9 +108,7 @@ export const components: { [key: string]: ComponentStyleConfig } = {
         },
       },
       panel: {
-        px: 6,
-        pt: 1,
-        pb: 5,
+        pt: 0,
       },
     },
   },

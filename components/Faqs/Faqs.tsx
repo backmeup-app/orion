@@ -1,37 +1,30 @@
-import { Box, Flex, Heading, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Container } from "@chakra-ui/react";
 import { Accordion } from "..";
 import { faqs } from "./faqs";
 
 export const Faqs = () => {
   return (
-    <Flex
+    <Box
       bg="ivory"
-      flexDirection="column"
-      justify="center"
-      align="center"
-      px={28}
-      pt={12}
-      pb={24}
+      pt={{ base: 12, md: 4, lg: 8 }}
+      pb={{ base: 8, sm: 16, lg: 24 }}
     >
-      <Heading
-        color="charlestonGreen"
-        fontSize="2xl"
-        textAlign="center"
-        mb={8}
-        pos="relative"
-        // textShadow="2px 1px navajoWhite"
-      >
-        Frequently Asked Questions
-        {/* <Image
-          src="https://res.cloudinary.com/olamileke/image/upload/v1662861664/backmeup/assets/hero/juicy-painting-with-strokes_iv5cmt.png"
-          boxSize="24"
-          top="-32px"
-          pos="absolute"
-        /> */}
-      </Heading>
-      <Box w="80%">
-        <Accordion items={faqs} />
-      </Box>
-    </Flex>
+      <Container maxW="1300px" w="90%" margin="0 auto">
+        <Flex flexDirection="column" justify="center" align="center">
+          <Heading
+            color="charlestonGreen"
+            fontSize={{ base: "xl", sm: "1.27rem", md: "1.45rem" }}
+            textAlign="center"
+            mb={{ base: 3, lg: 6 }}
+            pos="relative"
+          >
+            Frequently Asked Questions
+          </Heading>
+          <Box w={{ base: "100%", lg: "80%" }}>
+            <Accordion items={faqs} />
+          </Box>
+        </Flex>
+      </Container>
+    </Box>
   );
 };

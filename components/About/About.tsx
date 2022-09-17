@@ -38,7 +38,7 @@ export const About = () => {
 
   return (
     <Box bg="charlestonGreen" color="ivory" py={{ base: 12, sm: 12, xl: 20 }}>
-      <Container w="90%" margin="0 auto" maxW="1350px">
+      <Container w="90%" margin="0 auto" maxW="1300px">
         <SimpleGrid columns={12}>
           {browserWidth && browserWidth >= 480 && (
             <GridItem colSpan={{ base: 12, lg: 5 }}>
