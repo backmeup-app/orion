@@ -14,7 +14,7 @@ import {
 export const Info = () => {
   return (
     <Box bg="ivory" py={{ base: 6, sm: 10, md: 20 }} pos="relative">
-      <Container w="90%" margin="0 auto" maxW="1350px">
+      <Container w="90%" margin="0 auto" maxW="1300px">
         <SimpleGrid columns={12}>
           <GridItem colSpan={{ base: 12, md: 5 }}>
             <Flex

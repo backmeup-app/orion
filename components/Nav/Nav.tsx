@@ -6,6 +6,7 @@ import {
   HStack,
   Box,
   Container,
+  Image,
   chakra,
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -28,11 +29,19 @@ export const Nav = () => {
         d="flex"
         w="90%"
         margin="0 auto"
-        maxW="1350px"
+        maxW="1300px"
         alignItems="center"
         justifyContent="space-between"
       >
-        <Text>Dome</Text>
+        <Image
+          src="https://res.cloudinary.com/olamileke/image/upload/v1663418501/backmeup/assets/logos/logo_transparent_ligpzi.png"
+          width="40"
+          height="50px"
+          pos="relative"
+          top={1}
+          left={-2}
+          objectFit="cover"
+        />
         <Spacer />
         {browserWidth && browserWidth >= 769 ? (
           <HStack spacing={8}>

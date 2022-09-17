@@ -20,16 +20,17 @@ export const Footer = () => {
 
   return (
     <Box py={{ base: 10, sm: 8, lg: 12 }} bg="charlestonGreen" color="white">
-      <Container maxW="1350px" w="90%" margin="0 auto">
-        <Flex
-          align={{ base: "flex-start", sm: "center" }}
-          direction={{ base: "column-reverse", sm: "row" }}
-        >
-          <Text fontSize="md" ml={{ base: 1, sm: 0 }}>
-            DOME &copy; {new Date().getFullYear()}
+      <Container maxW="1300px" w="90%" margin="0 auto">
+        <Flex align="center" direction={{ base: "column-reverse", sm: "row" }}>
+          <Text
+            fontSize="md"
+            // textShadow="0 0.5px navajoWhite"
+            ml={{ base: 1, sm: 0 }}
+          >
+            Dome Tooling &copy; {new Date().getFullYear()}
           </Text>
           <Spacer />
-          <HStack mb={{ base: 6, sm: 0 }}>
+          <HStack mb={{ base: 6, sm: 0 }} spacing={{ base: 5, sm: 0 }}>
             <Anchor
               p={4}
               background="hsla(0, 0%, 100%, 0.02)"

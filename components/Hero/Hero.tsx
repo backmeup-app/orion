@@ -9,7 +9,7 @@ export const Hero = () => {
   return (
     <Flex
       w="100vw"
-      h={{ base: "70vh", lg: "100vh" }}
+      h={{ base: "80vh", lg: "100vh" }}
       justify="center"
       align="center"
       pos="relative"
