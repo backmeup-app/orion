@@ -88,7 +88,7 @@ export const components: { [key: string]: ComponentStyleConfig } = {
     baseStyle: {
       container: {
         border: "none",
-        mb: 1,
+        mb: 2,
         borderStyle: "ridge",
         borderColor: "navajoWhite",
       },
