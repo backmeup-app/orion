@@ -57,7 +57,7 @@ export const components: { [key: string]: ComponentStyleConfig } = {
         fontWeight: "bold",
 
         _hover: {
-          background: "yellow.500",
+          background: "yellow.300",
         },
       },
       danger: {
