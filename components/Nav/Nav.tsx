@@ -1,6 +1,5 @@
-import { useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import {
-  Text,
   Spacer,
   Button,
   HStack,
@@ -12,10 +11,11 @@ import {
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AppContext, TAppContext } from "../../contexts";
 import { navigate } from "../../utilities";
+import { Sidebar } from "..";
 
 export const Nav = () => {
   const { browserWidth } = useContext<TAppContext>(AppContext);
-  useEffect(() => {}, []);
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const HamburgerIcon = chakra(GiHamburgerMenu);
 
   return (
@@ -42,6 +42,7 @@ export const Nav = () => {
           top={1}
           left={-2}
           objectFit="cover"
+          zIndex="20"
         />
         <Spacer />
         {browserWidth && browserWidth >= 769 ? (
@@ -65,9 +66,37 @@ export const Nav = () => {
             </Button>
           </HStack>
         ) : (
-          <Box p="4" rounded="full" bg="navajowhite" cursor="pointer">
+          <Box
+            p="4"
+            rounded="full"
+            bg="navajowhite"
+            cursor="pointer"
+            onClick={() => {
+              setIsSidebarVisible(!isSidebarVisible);
+            }}
+            zIndex="20"
+          >
             <HamburgerIcon color="charlestonGreen" fontSize="xl" />
           </Box>
+        )}
+        {browserWidth && browserWidth < 769 && (
+          <>
+            <Sidebar isVisible={isSidebarVisible} />
+            <Box
+              pos="fixed"
+              top={0}
+              left={0}
+              width="100vw"
+              height="100vh"
+              bg="rgba(0,0,0,0.06)"
+              opacity={Number(isSidebarVisible)}
+              onClick={() => {
+                setIsSidebarVisible(false);
+              }}
+              transition="opacity 0.3s ease-in"
+              zIndex={5}
+            />
+          </>
         )}
       </Container>
     </Box>
