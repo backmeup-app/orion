@@ -11,7 +11,7 @@ export const Features: FC<TFeatures> = ({
   return (
     <VStack
       align={{ base: "center", lg: "flex-start" }}
-      w={{ base: "100%", xl: "80%" }}
+      w={{ base: "100%", xl: "90%" }}
     >
       {features.map((feature, index) => (
         <Feature
