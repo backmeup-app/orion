@@ -4,14 +4,18 @@ import { faqs } from "./faqs";
 
 export const Faqs = () => {
   return (
-    <Box bg="ivory" pt={{ base: 12, md: 4, lg: 8 }} pb={{ base: 8, sm: 12 }}>
+    <Box
+      bg="ivory"
+      pt={{ base: 12, md: 4, lg: 8 }}
+      pb={{ base: 8, sm: 16, lg: 20 }}
+    >
       <Container maxW="1300px" w="90%" margin="0 auto">
         <Flex flexDirection="column" justify="center" align="center">
           <Heading
             color="charlestonGreen"
             fontSize={{ base: "xl", sm: "1.27rem", md: "1.45rem" }}
             textAlign="center"
-            mb={{ base: 7, lg: 8 }}
+            mb={5}
             pos="relative"
           >
             Frequently Asked Questions
