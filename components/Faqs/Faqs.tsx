@@ -7,7 +7,7 @@ export const Faqs = () => {
     <Box
       bg="ivory"
       pt={{ base: 12, md: 4, lg: 8 }}
-      pb={{ base: 8, sm: 16, lg: 20 }}
+      pb={{ base: 12, sm: 16, lg: 20 }}
     >
       <Container maxW="1300px" w="90%" margin="0 auto">
         <Flex flexDirection="column" justify="center" align="center">
