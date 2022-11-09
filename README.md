@@ -10,5 +10,3 @@ I have several production telegram bots written in Python that require data stor
 - Say, the APIs were taking too long to respond, this would delay the response time of the bot and make it hard to mimic an actual conversation.
 
 So I made the decision to use file storage to enable the quick fetching of information and generally speed up operations. Despite this, I still wanted to have the security of having the application's data stored externally. So I decided to build Dome, with which I can set the bots up to automatically back their data at periodic intervals.
-
-The backend of this application is written in Typescript with Nest JS and can be found [here](https://github.com/usedome/zilch "here").
