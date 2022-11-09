@@ -1,34 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Dome
 
-## Getting Started
+---
 
-First, run the development server:
+_This project is still in development_
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+I have several production telegram bots written in Python that require data storage.These bots are either standalone ([newsbot](https://github.com/olamileke/politicalnewsbot "newsbot")) or are helpers to applications I built ([yeetbot](https://github.com/yeet-app/yeetbot "yeetbot"), [mauibot](https://github.com/maui-app/mauibot "mauibot")). In building these bots, I was faced with a challenge in that these bots need to hold user state. They need to know which respective users they were communicating with. And due to the conversational, quick fire (stateless) nature of chat, I didnt want the bots hitting their respective APIs on every single message to know which user from the integrated API was messaging it. From this, it would then take the user information and execute its operations. I also wanted to avoid two other potential bottlenecks I saw
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Overloading the APIs with too many requests if every single message involved querying for the user information and then hitting said API again to perform its operations.
+- Say, the APIs were taking too long to respond, this would delay the response time of the bot and make it hard to mimic an actual conversation.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+So I made the decision to use file storage to enable the quick fetching of information and generally speed up operations. Despite this, I still wanted to have the security of having the application's data stored externally. So I decided to build Dome, with which I can set the bots up to automatically back their data at periodic intervals.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The backend of this application is written in Typescript with Nest JS and can be found [here](https://github.com/usedome/zilch "here").
