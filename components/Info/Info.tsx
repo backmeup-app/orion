@@ -26,7 +26,7 @@ export const Info = () => {
               py={{ base: 12, md: 28 }}
             >
               <Image
-                src="https://res.cloudinary.com/olamileke/image/upload/v1662825945/backmeup/assets/hero/juicy-girl-is-working-on-laptop-at-a-remote-job_gqkkz8.gif"
+                src="https://res.cloudinary.com/olamileke/image/upload/v1672059407/dome/assets/orion/juicy-girl-is-working-on-laptop-at-a-remote-job_rbrsrj.gif"
                 objectFit="contain"
                 boxSize="80"
               />
@@ -78,7 +78,7 @@ export const Info = () => {
               </Button>
             </VStack>
             <Image
-              src="https://res.cloudinary.com/olamileke/image/upload/v1662835149/backmeup/assets/hero/bloom-dotted-motion-line_vrhrb1.png"
+              src="https://res.cloudinary.com/olamileke/image/upload/v1672059348/dome/assets/orion/bloom-dotted-motion-line_qjg2tx.png"
               pos="absolute"
               top="-5%"
               left="0"
@@ -88,7 +88,7 @@ export const Info = () => {
               zIndex="base"
             />
             <Image
-              src="https://res.cloudinary.com/olamileke/image/upload/v1662835277/backmeup/assets/hero/crayon-curly-line-23_pqhzg5.png"
+              src="https://res.cloudinary.com/olamileke/image/upload/v1672059306/dome/assets/orion/crayon-curly-line-23_ifpmnl.png"
               pos="absolute"
               bottom="-5%"
               right="0%"

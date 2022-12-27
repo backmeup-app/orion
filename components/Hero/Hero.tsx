@@ -61,7 +61,7 @@ export const Hero = () => {
         boxSize={{ base: 28, sm: 40 }}
         objectFit="contain"
         alt=""
-        src="https://res.cloudinary.com/olamileke/image/upload/v1662835149/backmeup/assets/hero/bloom-dotted-motion-line_vrhrb1.png"
+        src="https://res.cloudinary.com/olamileke/image/upload/v1672059348/dome/assets/orion/bloom-dotted-motion-line_qjg2tx.png"
       />
       <Image
         pos="absolute"
@@ -70,7 +70,7 @@ export const Hero = () => {
         boxSize="32"
         alt=""
         display={{ base: "none", sm: "inline" }}
-        src="https://res.cloudinary.com/olamileke/image/upload/v1662943091/backmeup/assets/hero/sammy-line-two-black-lines-3_ecdyqt.png"
+        src="https://res.cloudinary.com/olamileke/image/upload/v1672059811/dome/assets/orion/sammy-line-two-black-lines-3_rxpa3s.png"
         objectFit="contain"
       />
       <Image
@@ -80,7 +80,7 @@ export const Hero = () => {
         boxSize={{ base: 32, sm: 40 }}
         alt=""
         objectFit="contain"
-        src="https://res.cloudinary.com/olamileke/image/upload/v1662942213/backmeup/assets/hero/rubber-lines-31_hhdxhu.png"
+        src="https://res.cloudinary.com/olamileke/image/upload/v1672059739/dome/assets/orion/rubber-lines-31_jtjsbv.png"
       />
     </Flex>
   );
