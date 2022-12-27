@@ -39,7 +39,7 @@ export const Slides: FC<TSlides> = ({ selectedFeatureIndex }) => {
           width="100%"
         >
           <Image
-            src="https://res.cloudinary.com/olamileke/image/upload/v1661896832/backmeup/assets/hero/Screenshot_37_lly7ki.png"
+            src="https://res.cloudinary.com/olamileke/image/upload/v1672059645/dome/assets/orion/Screenshot_37_srit9r.png"
             objectFit="contain"
           />
         </Box>
