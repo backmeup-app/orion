@@ -60,7 +60,7 @@ export const Info = () => {
                 lineHeight="taller"
                 w={{ base: "100%", md: "80%" }}
                 px={{ base: 3, sm: 0 }}
-                textAlign={{ base: "justify", sm: "left" }}
+                textAlign={{ base: "center", sm: "left" }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 tempus vehicula metus eu pharetra Lorem ipsum dolor sit amet,

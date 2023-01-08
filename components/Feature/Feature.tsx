@@ -13,7 +13,7 @@ export const Feature: FC<TFeature> = ({
     <Flex
       direction="column"
       justify="center"
-      px={{ base: 5, sm: 8 }}
+      px={{ base: 1, sm: 8 }}
       py={{ base: 5, sm: 6 }}
       background={{
         base: "transparent",
