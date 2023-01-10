@@ -27,7 +27,7 @@ export const About = () => {
         textShadow="0.5px 0.5px navajoWhite"
         textAlign="center"
       >
-        Lorem ipsum dolor sit amet, consectetur.
+        What exactly does Dome offer
       </Heading>
       <Features
         selectedFeatureIndex={selectedFeature}

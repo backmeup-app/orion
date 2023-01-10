@@ -36,11 +36,10 @@ export const Hero = () => {
           textAlign="center"
           fontSize={{ base: "md", sm: "lg" }}
           w={{ base: "100%", md: "80%" }}
-          lineHeight="tall"
+          lineHeight="1.8"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus
-          vehicula metus eu pharetra. Vestibulum molestie neque dolor. Sed eu
-          neque facilisis lectus placerat rutrum
+          Dedicated tooling and infrastructure for seamless backups. Focus on what really
+          matters: your application and its processes. Dome has backups covered.
         </Text>
         <Button
           size={browserWidth && browserWidth >= 480 ? "lg" : "md"}
