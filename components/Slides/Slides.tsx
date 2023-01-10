@@ -1,6 +1,7 @@
 import { FC, useEffect, useRef } from "react";
 import { HStack, Image, Box } from "@chakra-ui/react";
 import { TSlides } from "./types";
+import { images } from "./data";
 
 export const Slides: FC<TSlides> = ({ selectedFeatureIndex }) => {
   useEffect(() => {
@@ -26,7 +27,7 @@ export const Slides: FC<TSlides> = ({ selectedFeatureIndex }) => {
         },
       }}
     >
-      {new Array(3).fill("").map((_, index) => (
+      {images.map((image, index) => (
         <Box
           key={index}
           p={8}
@@ -39,9 +40,8 @@ export const Slides: FC<TSlides> = ({ selectedFeatureIndex }) => {
           width="100%"
         >
           <Image
-            src="https://res.cloudinary.com/olamileke/image/upload/v1672059645/dome/assets/orion/Screenshot_37_srit9r.png"
-            objectFit="contain"
-            alt=""
+            src={image}
+            objectFit="cover"
           />
         </Box>
       ))}

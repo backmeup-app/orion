@@ -60,12 +60,13 @@ export const Info = () => {
                 lineHeight="taller"
                 w={{ base: "100%", md: "80%" }}
                 px={{ base: 3, sm: 0 }}
-                textAlign={{ base: "justify", sm: "left" }}
+                textAlign={{ base: "center", sm: "left" }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                tempus vehicula metus eu pharetra Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Nunc tempus vehicula metus eu
-                pharetra
+                Take full power into your hands and customize your backups.
+                Decide how, when and whether to receive notifications for the
+                different resources. Temporarily disable backups in your
+                dashboard. Decide how long your backups are to be stored for.
+                It's all in your hands.
               </Text>
               <Button
                 pos="relative"
@@ -77,7 +78,7 @@ export const Info = () => {
                 Get Started
               </Button>
             </VStack>
-            <Image
+            {/* <Image
               src="https://res.cloudinary.com/olamileke/image/upload/v1672059348/dome/assets/orion/bloom-dotted-motion-line_qjg2tx.png"
               pos="absolute"
               top="-5%"
@@ -86,7 +87,7 @@ export const Info = () => {
               objectFit="contain"
               display={{ base: "none", md: "inline" }}
               zIndex="base"
-            />
+            /> */}
             <Image
               src="https://res.cloudinary.com/olamileke/image/upload/v1672059306/dome/assets/orion/crayon-curly-line-23_ifpmnl.png"
               pos="absolute"

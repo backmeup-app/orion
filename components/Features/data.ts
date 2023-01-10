@@ -2,18 +2,18 @@ import { TFeature } from "..";
 
 export const features: Omit<TFeature, "isActive">[] = [
   {
-    heading: "Consectetur adipiscing elit. Tempus vehicula",
+    heading: "Custom dedicated URLs per Resource",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus vehicula metus eu pharetra",
+      "Each resource gets its own custom URL to which backup requests are made.",
   },
   {
-    heading: "Consectetur adipiscing elit. Tempus vehicula",
+    heading: "Authentication and IP Restriction",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus vehicula metus eu pharetra",
+      "Secure backup requests with API keys and restrict access to dedicated IP addresses.",
   },
   {
-    heading: "Consectetur adipiscing elit. Tempus vehicula",
+    heading: "Automated backup deletion and cleanup",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus vehicula metus eu pharetra",
+      "Dome automatically deletes backups older than the specified duration.",
   },
 ];

@@ -6,6 +6,5 @@ export * from "./Footer";
 export * from "./Hero";
 export * from "./Info";
 export * from "./Nav";
-export * from "./Sidebar";
 export * from "./Slides";
 export * from "./Wrappers";

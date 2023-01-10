@@ -7,7 +7,7 @@ const Index: NextPage = () => {
   return (
     <Box overflowX="hidden">
       <Head>
-        <title>Dome</title>
+        <title>Dome | The Bonafide Backup Tool</title>
       </Head>
       <Hero />
       <About />
