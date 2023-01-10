@@ -42,6 +42,7 @@ export const Slides: FC<TSlides> = ({ selectedFeatureIndex }) => {
           <Image
             src={image}
             objectFit="cover"
+            alt=""
           />
         </Box>
       ))}
