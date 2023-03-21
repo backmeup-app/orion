@@ -35,11 +35,12 @@ export const Hero = () => {
         <Text
           textAlign="center"
           fontSize={{ base: "md", sm: "lg" }}
-          w={{ base: "100%", md: "80%" }}
+          w={{ base: "100%", md: "90%" }}
           lineHeight="1.8"
         >
-          Dedicated tooling and infrastructure for seamless backups. Focus on what really
-          matters: your application and its processes. Dome has backups covered.
+          Dedicated tooling and infrastructure for seamless backups. Focus on
+          what really matters: your application and its processes. Dome has
+          backups covered.
         </Text>
         <Button
           size={browserWidth && browserWidth >= 480 ? "lg" : "md"}
