@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { GetServerSideProps, NextPage } from "next";
 import { Box } from "@chakra-ui/react";
 import { Hero, About, Info, Faqs, Footer, Meta } from "../components";
 
