@@ -5,6 +5,7 @@ export * from "./Features";
 export * from "./Footer";
 export * from "./Hero";
 export * from "./Info";
+export * from "./Meta";
 export * from "./Nav";
 export * from "./Slides";
 export * from "./Wrappers";

@@ -53,12 +53,7 @@ export const components: { [key: string]: ComponentStyleConfig } = {
         background: "ivory",
         border: "1px solid #1E2D2F",
         color: "#1E2D2F",
-        textShadow: "0.5px 0.5px navajoWhite",
         fontWeight: "bold",
-
-        _hover: {
-          background: "yellow.300",
-        },
       },
       danger: {
         background: "red.500",
@@ -68,10 +63,10 @@ export const components: { [key: string]: ComponentStyleConfig } = {
     sizes: {
       sm: {
         px: 4,
-        py: 5,
+        py: "20px",
       },
       lg: {
-        py: 7,
+        py: "26px",
         // px: 4,
       },
     },
