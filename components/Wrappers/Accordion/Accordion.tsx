@@ -42,7 +42,10 @@ export const Accordion: FC<TAccordion> = ({ items }) => {
               </Flex>
             </AccordionButton>
             <AccordionPanel pb={5} px={{ sm: 5 }}>
-              <Text fontSize={{ base: "sm", sm: "md" }} lineHeight="taller">
+              <Text
+                fontSize={{ base: "0.98rem", sm: "md" }}
+                lineHeight="taller"
+              >
                 {content}
               </Text>
             </AccordionPanel>
