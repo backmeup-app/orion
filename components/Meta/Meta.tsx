@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 export const Meta = () => {
-  const title = "Dome - Automated Backups Made Easy";
+  const title = "Automated Backups Made Easy";
   const description =
     "Take advantage of Dome's tooling to seamlessly backup files and other in memory stores. Its first class features make automating backups extremely easy. Get started for free!";
 
