@@ -60,7 +60,7 @@ export const Info = () => {
                 fontSize="md"
                 lineHeight="taller"
                 w={{ base: "100%", md: "80%" }}
-                px={{ base: 3, sm: 0 }}
+                px={0}
               >
                 Take full power into your hands and customize your backups.
                 Decide how, when and whether to receive notifications for the

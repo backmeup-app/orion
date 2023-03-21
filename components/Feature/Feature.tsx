@@ -27,12 +27,12 @@ export const Feature: FC<TFeature> = ({
     >
       <Text
         mb={2}
-        fontSize={{ base: "15.2px", sm: "16.5" }}
+        fontSize={{ base: "16px", sm: "16.5px" }}
         color={{ base: "white", sm: isActive ? "navajowhite" : "white" }}
       >
         {heading}
       </Text>
-      <Text fontSize={{ base: "14px", sm: "15px" }} lineHeight="taller">
+      <Text fontSize="15px" lineHeight="taller">
         {description}
       </Text>
     </Flex>
