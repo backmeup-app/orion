@@ -12,10 +12,10 @@ export const Meta = () => {
     "og:site_name": "Dome",
     "og:title": title,
     "og:description": description,
-    "og:url": "https://wwww.usedo.me",
+    "og:url": "https://usedo.me",
     "twitter:title": title,
     "twitter:description": description,
-    "twitter:url": "https://wwww.usedo.me",
+    "twitter:url": "https://usedo.me",
     "twitter:card": "summary_large_image",
   };
 

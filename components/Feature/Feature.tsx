@@ -14,7 +14,7 @@ export const Feature: FC<TFeature> = ({
       direction="column"
       justify="center"
       px={{ base: 1, sm: 8 }}
-      py={{ base: 5, sm: 6 }}
+      py={{ base: 3, sm: 6 }}
       background={{
         base: "transparent",
         sm: isActive ? "hsla(0, 0%, 100%, 0.02)" : "transparent",

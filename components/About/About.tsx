@@ -16,7 +16,7 @@ export const About = () => {
 
   const FeaturesContent = () => (
     <VStack
-      spacing={{ base: 6, md: 10 }}
+      spacing={{ base: 5, md: 10 }}
       mt={{ sm: 8, md: 10, lg: 0 }}
       align={{ base: "center", lg: "flex-start" }}
       width={{ base: "100%", lg: "fit-content" }}

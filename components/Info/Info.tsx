@@ -61,7 +61,6 @@ export const Info = () => {
                 lineHeight="taller"
                 w={{ base: "100%", md: "80%" }}
                 px={{ base: 3, sm: 0 }}
-                textAlign={{ base: "center", sm: "left" }}
               >
                 Take full power into your hands and customize your backups.
                 Decide how, when and whether to receive notifications for the
