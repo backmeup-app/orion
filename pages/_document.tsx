@@ -8,11 +8,6 @@ export default class Document extends NextDocument {
       <Html lang="en">
         <Head>
           <link
-            href="https://res.cloudinary.com/olamileke/image/upload/v1672075547/dome/assets/logos/icons8-papers-64_nsizg3.png"
-            rel="icon"
-            type="image/x-icon"
-          />
-          <link
             href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap"
             rel="stylesheet"
           />

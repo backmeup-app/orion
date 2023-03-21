@@ -1,12 +1,5 @@
 import { useContext } from "react";
-import {
-  Spacer,
-  Button,
-  HStack,
-  Box,
-  Container,
-  Text,
-} from "@chakra-ui/react";
+import { Spacer, Button, HStack, Box, Container, Text } from "@chakra-ui/react";
 import { AppContext, TAppContext } from "../../contexts";
 import { navigate } from "../../utilities";
 
@@ -33,7 +26,7 @@ export const Nav = () => {
           DOME
         </Text>
         <Spacer />
-        <HStack spacing={8}>
+        <HStack spacing={6}>
           <Button
             size="sm"
             variant="secondary"
