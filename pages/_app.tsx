@@ -19,8 +19,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, []);
 
-  if (!browserWidth) return <div />;
-
   return (
     <AppContext.Provider value={{ browserWidth }}>
       <ChakraProvider theme={theme}>
