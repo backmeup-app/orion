@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import {
   SimpleGrid,
   GridItem,
@@ -10,9 +11,12 @@ import {
   Box,
   Container,
 } from "@chakra-ui/react";
+import { AppContext, TAppContext } from "../../contexts";
 import { navigate } from "../../utilities";
 
 export const Info = () => {
+  const { browserWidth } = useContext<TAppContext>(AppContext);
+
   return (
     <Box bg="ivory" py={{ base: 6, sm: 10, md: 20 }} pos="relative">
       <Container w="90%" margin="0 auto" maxW="1300px">
@@ -71,6 +75,8 @@ export const Info = () => {
               <Button
                 pos="relative"
                 top={2}
+                size={browserWidth && browserWidth >= 480 ? "lg" : "md"}
+                fontSize={{ base: "0.9rem", sm: "17px" }}
                 onClick={() => {
                   navigate("/accounts/new");
                 }}

@@ -44,7 +44,7 @@ export const Hero = () => {
         </Text>
         <Button
           size={browserWidth && browserWidth >= 480 ? "lg" : "md"}
-          fontSize="17px"
+          fontSize={{ base: "0.9rem", sm: "17px" }}
           position="relative"
           top={{ base: "4px", sm: "0" }}
           onClick={() => {
