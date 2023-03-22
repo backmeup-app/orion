@@ -12,13 +12,9 @@ export const Meta = () => {
     "og:site_name": "Dome",
     "og:title": title,
     "og:description": description,
-    "og:image":
-      "https://res.cloudinary.com/olamileke/image/upload/v1679436668/dome/assets/orion/Screenshot_57_mi4h1q.png",
     "og:url": "https://usedo.me",
     "twitter:title": title,
     "twitter:description": description,
-    "twitter:image":
-      "https://res.cloudinary.com/olamileke/image/upload/v1679436668/dome/assets/orion/Screenshot_57_mi4h1q.png",
     "twitter:url": "https://usedo.me",
     "twitter:card": "summary_large_image",
   };
