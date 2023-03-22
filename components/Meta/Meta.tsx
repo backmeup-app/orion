@@ -13,10 +13,13 @@ export const Meta = () => {
     "og:title": title,
     "og:description": description,
     "og:url": "https://usedo.me",
+    "og:image": "",
     "twitter:title": title,
     "twitter:description": description,
     "twitter:url": "https://usedo.me",
     "twitter:card": "summary_large_image",
+    "twitter:image": "",
+    "twitter:site": "@f_olamileke",
   };
 
   const renderMetas = () =>
