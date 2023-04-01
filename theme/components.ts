@@ -64,6 +64,7 @@ export const components: { [key: string]: ComponentStyleConfig } = {
       sm: {
         px: 4,
         py: "20px",
+        fontSize: "0.9rem",
       },
       lg: {
         py: "26px",
