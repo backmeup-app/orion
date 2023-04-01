@@ -1,5 +1,5 @@
 export const images = [
-  "https://res.cloudinary.com/olamileke/image/upload/v1673376390/dome/assets/orion/Screenshot_55_pweutf.png",
-  "https://res.cloudinary.com/olamileke/image/upload/v1673312618/dome/assets/orion/Screenshot_47_ucm1cr.png",
-  "https://res.cloudinary.com/olamileke/image/upload/v1673312618/dome/assets/orion/Screenshot_48_apseoa.png",
+  "https://res.cloudinary.com/olamileke/image/upload/v1680385078/dome/assets/orion/Screenshot_63_mnkoil.png",
+  "https://res.cloudinary.com/olamileke/image/upload/v1680385077/dome/assets/orion/Screenshot_62_jcdctq.png",
+  "https://res.cloudinary.com/olamileke/image/upload/v1680385077/dome/assets/orion/Screenshot_61_sgp7f7.png",
 ];

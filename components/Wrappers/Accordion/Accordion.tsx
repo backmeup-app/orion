@@ -29,7 +29,7 @@ export const Accordion: FC<TAccordion> = ({ items }) => {
               >
                 <Text
                   color="charlestonGreen"
-                  fontSize={{ base: "1rem", sm: "1.021rem" }}
+                  fontSize={{ base: "1rem" }}
                   lineHeight="taller"
                 >
                   {title}

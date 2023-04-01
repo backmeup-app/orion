@@ -75,8 +75,8 @@ export const Info = () => {
               <Button
                 pos="relative"
                 top={2}
-                size={browserWidth && browserWidth >= 480 ? "lg" : "md"}
-                fontSize={{ base: "0.9rem", sm: "17px" }}
+                size={browserWidth && browserWidth >= 480 ? "sm" : "md"}
+                fontSize={{ base: "0.9rem" }}
                 onClick={() => {
                   navigate("/accounts/new");
                 }}
