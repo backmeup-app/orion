@@ -2,8 +2,6 @@
 
 ---
 
-_This project is still in development_
-
 I have several production telegram bots written in Python that require data storage.These bots are either standalone ([newsbot](https://github.com/olamileke/politicalnewsbot "newsbot")) or are helpers to applications I built ([yeetbot](https://github.com/theyeetapp/yeetbot "yeetbot"), [mauibot](https://github.com/maui-app/mauibot "mauibot")). In building these bots, I was faced with a challenge in that these bots need to hold user state. They need to know which respective users they were communicating with. And due to the conversational, quick fire (stateless) nature of chat, I didnt want the bots hitting their respective APIs on every single message to know which user from the integrated API was messaging it. From this, it would then take the user information and execute its operations. I also wanted to avoid two other potential bottlenecks I saw
 
 - Overloading the APIs with too many requests if every single message involved querying for the user information and then hitting said API again to perform its operations.
